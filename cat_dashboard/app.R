@@ -3,7 +3,6 @@ library(dplyr)
 library(ggplot2)
 library(readxl)
 library(bslib)
-library(bsicons)
 
 cat_force_pivot <- read_excel("/Users/abigaildease/Desktop/cat-force-data-proj/data/CAT Pivoted Force Data.xlsx")
 
@@ -56,14 +55,11 @@ ui <- page_navbar(
          plotOutput("genderAvgPlot")
        )
      )
-      
-       ))
-       )
+    )
+  )
+ )
 
     
-
-
-
 server <- function(input, output, session) {
   
   output$swimmer_overview_title <- renderText({
