@@ -52,7 +52,7 @@ ui <- page_navbar(
      ),
      layout_columns(
        card(
-         card_header("Average Force by Gender Over Sessions"),
+         card_header("Average Force by Gender over Sessions"),
          plotOutput("genderAvgPlot")
        )
      )
